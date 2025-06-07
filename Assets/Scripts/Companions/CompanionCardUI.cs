@@ -36,6 +36,13 @@ public class CompanionCardUI : MonoBehaviour
                 return;
             }
 
+            // Block selection during workout if the toggle is off
+            if (!CompanionUIManager.AllowSelectionDuringWorkout && WorkoutSessionManager.Instance.IsWorkoutActive)
+            {
+                Debug.Log("Cannot select/unselect companion during workout.");
+                return;
+            }
+
             bool isNowSelected = WorkoutSessionManager.Instance.ToggleSelection(Companion);
             SetSelected(isNowSelected);
         });

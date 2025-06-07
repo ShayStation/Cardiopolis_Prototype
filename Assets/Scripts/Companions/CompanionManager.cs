@@ -14,6 +14,7 @@ public class CompanionManager : MonoBehaviour
     public delegate void CompanionLevelUpEvent(CompanionData companion);
     public event CompanionLevelUpEvent OnCompanionLeveledUp;
 
+
     private void Awake()
     {
         // Singleton setup
@@ -37,21 +38,19 @@ public class CompanionManager : MonoBehaviour
 
     public void GenerateStarterCompanions()
     {
-        OwnedCompanions.Clear(); // Optional: wipe existing list
+        OwnedCompanions.Clear();
 
-        // Safety check
         if (AvailableTypes == null || AvailableTypes.Count == 0)
         {
             Debug.LogWarning("No CompanionTypes available to generate companions.");
             return;
         }
 
-        // Example: Generate one of each available type
         foreach (var type in AvailableTypes)
         {
             var companion = CompanionGenerator.Generate(type);
             OwnedCompanions.Add(companion);
-            Debug.Log($"Starter companion added: {companion.GeneratedName} the {companion.RoleName}");
+            Debug.Log($"Starter companion added: {companion.GeneratedName} the {type.TypeName}");
         }
     }
 

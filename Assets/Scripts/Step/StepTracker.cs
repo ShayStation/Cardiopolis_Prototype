@@ -4,6 +4,8 @@ using UnityEngine.EventSystems;
 
 public class StepTracker : MonoBehaviour
 {
+    public static StepTracker Instance { get; private set; }
+
     public int TotalSteps = 0;
     public int StepsPerPress = 100;
     private Controls controls;
@@ -11,18 +13,19 @@ public class StepTracker : MonoBehaviour
     public delegate void OnStepChanged(int steps);
     public static event OnStepChanged OnStepAdded;
 
-    void Awake()
+    private void Awake()
     {
+        Instance = this;
         controls = new Controls();
         controls.Gameplay.SimulateStep.performed += ctx => AddSteps();
     }
 
-    void OnEnable()
+    private void OnEnable()
     {
         controls.Gameplay.Enable();
     }
 
-    void OnDisable()
+    private void OnDisable()
     {
         controls.Gameplay.Disable();
     }
@@ -32,24 +35,39 @@ public class StepTracker : MonoBehaviour
         AddSteps();
     }
 
-    void AddSteps()
+    private void AddSteps()
     {
         TotalSteps += StepsPerPress;
         Debug.Log($"Steps: {TotalSteps}");
 
-        StepUIManager.Instance?.UpdateStepDisplay(TotalSteps);
+        // Update the persistent total counter
+        StepUIManager.Instance?.UpdateTotalStepsDisplay(TotalSteps);
 
-        float xpGain = StepsPerPress * (WorkoutSessionManager.Instance != null && WorkoutSessionManager.Instance.IsWorkoutActive ? 1.0f : 0.25f);
+        // Grant XP (full rate if in?workout, quarter rate otherwise)
+        float xpGain = StepsPerPress *
+            (WorkoutSessionManager.Instance != null && WorkoutSessionManager.Instance.IsWorkoutActive
+                ? 1f
+                : 0.25f);
 
         if (WorkoutSessionManager.Instance?.SelectedCompanion != null)
         {
             WorkoutSessionManager.Instance.SelectedCompanion.AddXP(xpGain);
         }
 
+        // Fire the workout?only event
         if (WorkoutSessionManager.Instance != null && WorkoutSessionManager.Instance.IsWorkoutActive)
         {
             OnStepAdded?.Invoke(StepsPerPress);
         }
     }
 
+    /// <summary>
+    /// Debug: reset the entire step history to zero.
+    /// </summary>
+    public void DebugResetTotalSteps()
+    {
+        TotalSteps = 0;
+        Debug.Log("Total Steps reset to 0");
+        StepUIManager.Instance?.UpdateTotalStepsDisplay(TotalSteps);
+    }
 }

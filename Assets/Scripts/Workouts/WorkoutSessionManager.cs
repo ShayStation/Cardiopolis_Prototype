@@ -1,3 +1,4 @@
+// WorkoutSessionManager.cs
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,22 +7,7 @@ public class WorkoutSessionManager : MonoBehaviour
     public static WorkoutSessionManager Instance { get; private set; }
 
     public event System.Action OnCompanionLeveledUp;
-
-    public CompanionData SelectedCompanion { get; private set; }
-
-    public bool IsWorkoutActive { get; private set; }
-
-
-    private void Awake()
-    {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(this.gameObject);
-            return;
-        }
-
-        Instance = this;
-    }
+    public event System.Action OnWorkoutEnded;
 
     public List<CompanionCardUI> AllCards = new List<CompanionCardUI>();
 
@@ -38,29 +24,32 @@ public class WorkoutSessionManager : MonoBehaviour
         {
             SelectedCompanion = null;
             CompanionUIManager.Instance.ClearDisplay();
-
             foreach (var card in AllCards)
-            {
-                if (card != null)
-                    card.SetSelected(false);
-            }
-
+                card?.SetSelected(false);
             return false;
         }
 
         // Otherwise, select the new one
         SelectedCompanion = companion;
         CompanionUIManager.Instance.SetDisplay(companion);
-
         foreach (var card in AllCards)
-        {
-            if (card != null)
-                card.SetSelected(card.Companion == companion);
-        }
+            card?.SetSelected(card.Companion == companion);
 
         return true;
     }
 
+    public CompanionData SelectedCompanion { get; private set; }
+    public bool IsWorkoutActive { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        Instance = this;
+    }
 
     public void StartWorkout()
     {
@@ -75,7 +64,8 @@ public class WorkoutSessionManager : MonoBehaviour
     {
         Debug.Log("Workout ended");
         IsWorkoutActive = false;
-
+        SeedGrowthManager.Instance.ResetSessionSeedProgress();
+        OnWorkoutEnded?.Invoke();
         // Show summary later
     }
 

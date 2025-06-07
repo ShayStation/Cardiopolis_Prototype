@@ -6,11 +6,14 @@ public class SeedGrowthManager : MonoBehaviour
     public float GrowthRequired = 1000f;
     public int SeedsGrown = 0;
     public float GrowthPerStep = 0.5f;
+    public int SessionSeedsGrown { get; private set; }
 
     public delegate void OnSeedComplete();
     public static event OnSeedComplete OnSeedFullyGrown;
 
     public static SeedGrowthManager Instance { get; private set; }
+   
+
 
     private void Awake()
     {
@@ -42,7 +45,13 @@ public class SeedGrowthManager : MonoBehaviour
         {
             CurrentGrowth = 0f;
             SeedsGrown++;
-            Debug.Log($"🌱 Seed fully grown! Total: {SeedsGrown}");
+
+            if (WorkoutSessionManager.Instance != null && WorkoutSessionManager.Instance.IsWorkoutActive)
+            {
+                SessionSeedsGrown++;
+            }
+
+            Debug.Log($"Seed fully grown! Total: {SeedsGrown}, This session: {SessionSeedsGrown}");
             OnSeedFullyGrown?.Invoke();
         }
     }
@@ -51,6 +60,12 @@ public class SeedGrowthManager : MonoBehaviour
     {
         CurrentGrowth = 0f;
         Debug.Log("Seed growth progress has been reset.");
+    }
+
+    public void ResetSessionSeedProgress()
+    {
+        SessionSeedsGrown = 0;
+        Debug.Log("Session seed count has been reset.");
     }
 
 }

@@ -1,3 +1,4 @@
+// WorkoutControlUIManager.cs
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,13 +11,11 @@ public class WorkoutControlUIManager : MonoBehaviour
     {
         startButton.onClick.AddListener(StartWorkout);
         endButton.onClick.AddListener(EndWorkout);
-
         UpdateUIState();
     }
 
     void Update()
     {
-        // Refresh button state based on selection and activity
         UpdateUIState();
     }
 
@@ -28,19 +27,19 @@ public class WorkoutControlUIManager : MonoBehaviour
     void EndWorkout()
     {
         WorkoutSessionManager.Instance?.EndWorkout();
+        // Reset the workout?only counter on the UI
+        StepUIManager.Instance?.ResetWorkoutSteps();
     }
 
     void UpdateUIState()
     {
         var manager = WorkoutSessionManager.Instance;
-
         if (manager == null)
         {
             startButton.interactable = false;
             endButton.interactable = false;
             return;
         }
-
         startButton.interactable = manager.SelectedCompanion != null && !manager.IsWorkoutActive;
         endButton.interactable = manager.IsWorkoutActive;
     }

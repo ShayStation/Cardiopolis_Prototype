@@ -4,6 +4,8 @@ using UnityEngine;
 public class CompanionUIManager : MonoBehaviour
 {
     public static CompanionUIManager Instance { get; private set; }
+    public static bool AllowSelectionDuringWorkout = true;
+
 
     void Awake()
     {

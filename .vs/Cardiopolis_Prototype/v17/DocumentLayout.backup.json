@@ -3,16 +3,40 @@
   "WorkspaceRootPath": "D:\\GitHub\\Cardiopolis_Prototype\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Step\\StepTracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Step\\StepTracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Step\\StepUIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Step\\StepUIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Workouts\\WorkoutControlUIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Workouts\\WorkoutControlUIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Step\\StepTracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Step\\StepTracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Seeds\\SeedUIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Seeds\\SeedUIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Workouts\\WorkoutSessionManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Workouts\\WorkoutSessionManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Companions\\CompanionManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Companions\\CompanionManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Companions\\CompanionCardUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Companions\\CompanionCardUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Companions\\CompanionUIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Companions\\CompanionUIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Seeds\\SeedGrowthManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Seeds\\SeedGrowthManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,37 +46,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "WorkoutControlUIManager.cs",
+              "DocumentMoniker": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Workouts\\WorkoutControlUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Workouts\\WorkoutControlUIManager.cs",
+              "ToolTip": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Workouts\\WorkoutControlUIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Workouts\\WorkoutControlUIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T20:38:52.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CompanionManager.cs",
+              "DocumentMoniker": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Companions\\CompanionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Companions\\CompanionManager.cs",
+              "ToolTip": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Companions\\CompanionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Companions\\CompanionManager.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T19:03:00.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CompanionCardUI.cs",
+              "DocumentMoniker": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Companions\\CompanionCardUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Companions\\CompanionCardUI.cs",
+              "ToolTip": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Companions\\CompanionCardUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Companions\\CompanionCardUI.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T18:58:50.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CompanionUIManager.cs",
+              "DocumentMoniker": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Companions\\CompanionUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Companions\\CompanionUIManager.cs",
+              "ToolTip": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Companions\\CompanionUIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Companions\\CompanionUIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T18:56:45.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WorkoutSessionManager.cs",
+              "DocumentMoniker": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Workouts\\WorkoutSessionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Workouts\\WorkoutSessionManager.cs",
+              "ToolTip": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Workouts\\WorkoutSessionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Workouts\\WorkoutSessionManager.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAcwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T18:54:44.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SeedGrowthManager.cs",
+              "DocumentMoniker": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Seeds\\SeedGrowthManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Seeds\\SeedGrowthManager.cs",
+              "ToolTip": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Seeds\\SeedGrowthManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Seeds\\SeedGrowthManager.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T18:51:13.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "StepTracker.cs",
               "DocumentMoniker": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Step\\StepTracker.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Step\\StepTracker.cs",
               "ToolTip": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Step\\StepTracker.cs",
               "RelativeToolTip": "Assets\\Scripts\\Step\\StepTracker.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAowD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T19:47:05.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "StepUIManager.cs",
               "DocumentMoniker": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Step\\StepUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Step\\StepUIManager.cs",
               "ToolTip": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Step\\StepUIManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Step\\StepUIManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAcwEEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T19:44:46.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SeedUIManager.cs",
               "DocumentMoniker": "D:\\GitHub\\Cardiopolis_Prototype\\Assets\\Scripts\\Seeds\\SeedUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Seeds\\SeedUIManager.cs",
