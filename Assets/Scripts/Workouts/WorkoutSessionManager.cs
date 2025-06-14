@@ -61,13 +61,16 @@ public class WorkoutSessionManager : MonoBehaviour
     }
 
     public void EndWorkout()
-    {
-        Debug.Log("Workout ended");
-        IsWorkoutActive = false;
-        SeedGrowthManager.Instance.ResetSessionSeedProgress();
-        OnWorkoutEnded?.Invoke();
-        // Show summary later
-    }
+{
+    Debug.Log("Workout ended");
+    IsWorkoutActive = false;
+    SeedGrowthManager.Instance.ResetSessionSeedProgress();
+    OnWorkoutEnded?.Invoke();
+
+    // Final step sync from iOS to ensure nothing is missed
+    StepTrackerManager.Instance?.DebugRequestStepCheck();
+}
+
 
     public void ResetSessionXP()
     {

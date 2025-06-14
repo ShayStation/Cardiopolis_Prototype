@@ -70,4 +70,9 @@ public class StepTracker : MonoBehaviour
         Debug.Log("Total Steps reset to 0");
         StepUIManager.Instance?.UpdateTotalStepsDisplay(TotalSteps);
     }
+    public static void RaiseOnStepAdded(int steps)
+{
+    OnStepAdded?.Invoke(steps);
+}
+
 }
